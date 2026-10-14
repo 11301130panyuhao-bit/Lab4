@@ -1,0 +1,198 @@
+   * {
+   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    flex: 1;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #003d80;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+}
+
+.btn-card {
+    background-color: #007bff;
+    color: #ffffff;
+    margin-top: auto; 
+}
+
+.btn-card:hover {
+    background-color: #0056b3;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.site-header .logo {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #0056b3;
+}
+
+.site-header .nav-links a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #495057;
+    font-weight: 500;
+}
+
+.site-header .nav-links a:hover {
+    color: #0056b3;
+}
+
+.site-footer {
+    font-family: "Times New Roman", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: #343a40;
+    color: #ffffff;
+    margin-top: auto;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.hero-main {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.hero-main h1 {
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.hero-main p {
+    margin-bottom: 1.5rem;
+    color: #6c757d;
+}
+
+.hero-sidebar {
+    background-color: #e9ecef;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.hero-sidebar h2 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.hero-sidebar .sidebar-details p {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.hero-sidebar .btn {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.cards-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    overflow: hidden;
+}
+
+.card-img-placeholder {
+    height: 160px;
+    background-color: #dee2e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+    font-weight: 600;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    text-align: center;
+    margin-bottom: 0.75rem;
+    color: #212529;
+}
+
+.card-content p {
+    margin-bottom: 1.5rem;
+    color: #6c757d;
+    font-size: 0.95rem;
+}
+
+.card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .hero-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+}
